@@ -3,9 +3,54 @@
     <head>Avancement du TIPE</head>
     <p> 1er jour de recherche: prise en main de l'html</html></p>
     <p>- je veux faire des recherches en physique et SII</p>
-    <p>cycle dans les moteurs éclectrique ?? faire des recherches 
-        est ce que oscillation et cycle il y a un lien ?
+    <p>✅ Proposition de problématique finale :
 
-        Possible idée de sujet sur l'étude d'une boucle de controle PID dans un robot mobile , comment ca améliore la stabilité et la précision des déplacements ? 
+        “Comment la mise en place d’une boucle de régulation de vitesse permet-elle d’améliorer la régularité du déplacement d’une voiture radiocommandée sur un circuit fermé ?”
+        
+        ⸻
+        
+        💡 Pourquoi c’est un bon sujet ?
+            •	Cycle : le circuit est un trajet cyclique → boucle spatiale.
+            •	Boucle : tu ajoutes une boucle de rétroaction avec capteur + asservissement.
+            •	Tu peux comparer la voiture en boucle ouverte (tu lui dis d’avancer à fond) et en boucle fermée (tu mesures la vitesse et tu ajustes le moteur).
+            •	Tu peux faire une modélisation + simulation d’un PID (simple) et un test en vrai (avec un Arduino, un capteur de vitesse ou roue codeuse, etc.).
+            •	Facile à complexifier ou simplifier selon ton niveau.
+        
+        ⸻
+        
+        🔧 Partie expérimentale possible
+            •	Voiture RC contrôlée via Arduino (ou module ESC + moteur brushless si tu veux être plus libre).
+            •	Ajout d’un capteur de vitesse (ex : codeur optique, ou capteur à effet Hall).
+            •	Contrôle de la vitesse par PWM.
+            •	Tu fais rouler la voiture sur un petit circuit et tu mesures :
+            •	la vitesse réelle
+            •	la régularité du trajet (écarts de vitesse, instabilité, etc.)
+            •	le temps pour boucler le circuit
+        
+        ⸻
+        
+        📈 Partie simulation / modélisation
+            •	Modèle simplifié : la voiture est un système avec une constante de temps et un gain.
+            •	Tu crées un modèle de système à asservir, avec un régulateur PID.
+            •	Simu Python ou Excel/GeoGebra/Scilab/Matlab.
+            •	Tu compares la réponse du système sans PID, avec PID mal réglé, puis bien réglé.
+        
+        ⸻
+        
+        🎯 Objectif
+        
+        → Montrer qu’une boucle de régulation améliore la stabilité et la régularité du mouvement, donc plus efficace sur un cycle de trajet.
+        
+        ⸻
+        
+        Si tu veux, je peux t’aider à :
+            •	définir ton plan de TIPE
+            •	faire la modélisation en équations
+            •	simuler le PID
+            •	choisir les capteurs ou les composants simples pour la partie expérimentale
+        
+        Tu veux qu’on commence par quoi ?
+
+    
     </p>
 </html>
